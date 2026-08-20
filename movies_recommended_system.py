@@ -57,9 +57,9 @@ if not has_movie_id:
 
 def fetch_poster(movie_id):
 
-    api_key = st.secrets.get("TMDB_API_KEY")
+    TMDB_API_KEY = st.secrets.get("TMDB_API_KEY")
 
-    if not api_key:
+    if not TMDB_API_KEY:
         return None
 
     url = f"https://api.themoviedb.org/3/movie/{movie_id}"
