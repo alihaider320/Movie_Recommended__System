@@ -65,7 +65,7 @@ def fetch_poster(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}"
 
     params = {
-        "api_key": api_key
+        "TMDB_API_KEY": TMDB_API_KEY
     }
 
     try:
